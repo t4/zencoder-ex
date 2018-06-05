@@ -39,7 +39,7 @@ defmodule Zencoder.Mixfile do
     [
       {:httpotion, "~> 1.0.0"},
       {:ibrowse, github: "cmullaparthi/ibrowse", tag: "v4.1.0"},
-      {:poison, "~> 1.4.0"},
+      {:poison, ">= 1.4.0"},
       {:exvcr, "~> 0.4.0",       only: [:dev, :test]},
       {:excoveralls, "~> 0.3.2", only: [:dev, :test]},
       {:meck, "~> 0.8.2",        only: [:dev, :test]}
