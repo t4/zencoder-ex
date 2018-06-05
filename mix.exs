@@ -7,7 +7,7 @@ defmodule Zencoder.Mixfile do
       version: "1.0.1",
       elixir: "~> 1.0.0",
       test_coverage: [tool: ExCoveralls],
-      deps: deps,
+      deps: deps(),
       package: [
         contributors: ["Adam Kittelson"],
         licenses: ["MIT"],
@@ -38,7 +38,7 @@ defmodule Zencoder.Mixfile do
   def deps do
     [
       {:httpotion, "~> 1.0.0"},
-      {:ibrowse, "~> 4.4.0"}
+      {:ibrowse, "~> 4.4.0"},
       {:poison, ">= 1.4.0"},
       {:exvcr, "~> 0.4.0",       only: [:dev, :test]},
       {:excoveralls, "~> 0.3.2", only: [:dev, :test]},
